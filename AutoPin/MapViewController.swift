@@ -29,7 +29,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             if let latitude = carLatitude, let longitude = carLongitude {
                 let carLocationCoordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
 
-                // Imposta la regione iniziale della mappa per mostrare entrambi i punti
                 if let userCoordinate = locationManager.location?.coordinate {
                     showBothLocations(userLocation: userCoordinate, carLocation: carLocationCoordinate)
                 } else {
@@ -44,7 +43,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             }
         }
 
-    // Metodo per mostrare entrambi i punti sulla mappa
     func showBothLocations(userLocation: CLLocationCoordinate2D, carLocation: CLLocationCoordinate2D) {
         // Calcola i limiti per contenere entrambi i punti
         let minLat = min(userLocation.latitude, carLocation.latitude)
@@ -52,10 +50,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         let minLon = min(userLocation.longitude, carLocation.longitude)
         let maxLon = max(userLocation.longitude, carLocation.longitude)
 
-        // Calcola il centro e lo span della regione
         let centerLat = (minLat + maxLat) / 2
         let centerLon = (minLon + maxLon) / 2
-        let spanLat = (maxLat - minLat) * 1.5 // Aggiungiamo un po' di margine
+        let spanLat = (maxLat - minLat) * 1.5
         let spanLon = (maxLon - minLon) * 1.5
 
         let center = CLLocationCoordinate2D(latitude: centerLat, longitude: centerLon)
@@ -84,7 +81,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
                 }
 
                 if let route = response?.routes.first {
-                    print("Percorso trovato!") // Aggiungi questa riga
+                    print("Percorso trovato!")
                     self.mapView.removeOverlays(self.mapView.overlays)
                     self.mapView.addOverlay(route.polyline, level: .aboveRoads)
 
@@ -98,7 +95,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         }
     }
 
-    // Metodo del delegato per personalizzare l'aspetto dell'overlay del percorso
     func mapView(_ mapView: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
         if let polyline = overlay as? MKPolyline {
             let renderer = MKPolylineRenderer(polyline: polyline)
@@ -112,7 +108,6 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
             userLocation = location
-            // Se abbiamo anche la posizione dell'auto, mostriamo entrambi i punti
             if let latitude = carLatitude, let longitude = carLongitude {
                 let carLocationCoordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
                 showBothLocations(userLocation: location.coordinate, carLocation: carLocationCoordinate)
