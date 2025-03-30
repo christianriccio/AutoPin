@@ -11,6 +11,8 @@
 		</dict>
 		<key>WatchPin Watch Watch App.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
@@ -18,6 +20,19 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>1A168BEA2D996CF800A72493</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1A168CBE2D999E8600A72493</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

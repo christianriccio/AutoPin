@@ -6,17 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		1A168CCC2D999E8600A72493 /* WatchPin Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1A168CBF2D999E8600A72493 /* WatchPin Watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
-		1A168CCA2D999E8600A72493 /* PBXContainerItemProxy */ = {
+		1A168D312D99BD5700A72493 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1A168BE32D996CF800A72493 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1A168CBE2D999E8600A72493;
-			remoteInfo = "WatchPin Watch Watch App";
+			remoteGlobalIDString = 1A168BEA2D996CF800A72493;
+			remoteInfo = AutoPin;
+		};
+		1A5A67EE2D99C4D600C6D9BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A168BE32D996CF800A72493 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A168BEA2D996CF800A72493;
+			remoteInfo = AutoPin;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -27,7 +30,6 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				1A168CCC2D999E8600A72493 /* WatchPin Watch Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +49,13 @@
 			);
 			target = 1A168BEA2D996CF800A72493 /* AutoPin */;
 		};
+		1A5A67F42D99C7B300C6D9BD /* Exceptions for "WatchPin Watch Watch App" folder in "WatchPin Watch Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 1A168CBE2D999E8600A72493 /* WatchPin Watch Watch App */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -60,6 +69,9 @@
 		};
 		1A168CC02D999E8600A72493 /* WatchPin Watch Watch App */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				1A5A67F42D99C7B300C6D9BD /* Exceptions for "WatchPin Watch Watch App" folder in "WatchPin Watch Watch App" target */,
+			);
 			path = "WatchPin Watch Watch App";
 			sourceTree = "<group>";
 		};
@@ -116,7 +128,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				1A168CCB2D999E8600A72493 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				1A168BED2D996CF800A72493 /* AutoPin */,
@@ -139,6 +150,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				1A168D322D99BD5700A72493 /* PBXTargetDependency */,
+				1A5A67EF2D99C4D600C6D9BD /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				1A168CC02D999E8600A72493 /* WatchPin Watch Watch App */,
@@ -223,10 +236,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1A168CCB2D999E8600A72493 /* PBXTargetDependency */ = {
+		1A168D322D99BD5700A72493 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1A168CBE2D999E8600A72493 /* WatchPin Watch Watch App */;
-			targetProxy = 1A168CCA2D999E8600A72493 /* PBXContainerItemProxy */;
+			target = 1A168BEA2D996CF800A72493 /* AutoPin */;
+			targetProxy = 1A168D312D99BD5700A72493 /* PBXContainerItemProxy */;
+		};
+		1A5A67EF2D99C4D600C6D9BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A168BEA2D996CF800A72493 /* AutoPin */;
+			targetProxy = 1A5A67EE2D99C4D600C6D9BD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -249,7 +267,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -285,7 +303,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -355,7 +373,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -363,6 +381,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 4;
 			};
 			name = Debug;
 		};
@@ -403,6 +422,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = NO;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -412,12 +432,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -448,7 +469,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Debug;
 		};
@@ -478,7 +499,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 10.6;
+				WATCHOS_DEPLOYMENT_TARGET = 11.0;
 			};
 			name = Release;
 		};
