@@ -21,7 +21,5 @@
 			</array>
 		</dict>
 	</dict>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>L&apos;app ha bisogno della tua posizione per salvare il punto in cui hai parcheggiato l&apos;auto.</string>
 </dict>
 </plist>
