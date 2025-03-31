@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1A5A67F62D9A897B00C6D9BD /* AutoPin.app in Resources */ = {isa = PBXBuildFile; fileRef = 1A168BEB2D996CF800A72493 /* AutoPin.app */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		1A168D312D99BD5700A72493 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -15,6 +19,27 @@
 			remoteInfo = AutoPin;
 		};
 		1A5A67EE2D99C4D600C6D9BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A168BE32D996CF800A72493 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A168BEA2D996CF800A72493;
+			remoteInfo = AutoPin;
+		};
+		1A5A67F72D9A897B00C6D9BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A168BE32D996CF800A72493 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A168BEA2D996CF800A72493;
+			remoteInfo = AutoPin;
+		};
+		1A5A68182D9A899900C6D9BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A168BE32D996CF800A72493 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1A168BEA2D996CF800A72493;
+			remoteInfo = AutoPin;
+		};
+		1A5A681A2D9A89B700C6D9BD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1A168BE32D996CF800A72493 /* Project object */;
 			proxyType = 1;
@@ -152,6 +177,9 @@
 			dependencies = (
 				1A168D322D99BD5700A72493 /* PBXTargetDependency */,
 				1A5A67EF2D99C4D600C6D9BD /* PBXTargetDependency */,
+				1A5A67F82D9A897B00C6D9BD /* PBXTargetDependency */,
+				1A5A68192D9A899900C6D9BD /* PBXTargetDependency */,
+				1A5A681B2D9A89B700C6D9BD /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				1A168CC02D999E8600A72493 /* WatchPin Watch Watch App */,
@@ -213,6 +241,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A5A67F62D9A897B00C6D9BD /* AutoPin.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +275,21 @@
 			target = 1A168BEA2D996CF800A72493 /* AutoPin */;
 			targetProxy = 1A5A67EE2D99C4D600C6D9BD /* PBXContainerItemProxy */;
 		};
+		1A5A67F82D9A897B00C6D9BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A168BEA2D996CF800A72493 /* AutoPin */;
+			targetProxy = 1A5A67F72D9A897B00C6D9BD /* PBXContainerItemProxy */;
+		};
+		1A5A68192D9A899900C6D9BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A168BEA2D996CF800A72493 /* AutoPin */;
+			targetProxy = 1A5A68182D9A899900C6D9BD /* PBXContainerItemProxy */;
+		};
+		1A5A681B2D9A89B700C6D9BD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1A168BEA2D996CF800A72493 /* AutoPin */;
+			targetProxy = 1A5A681A2D9A89B700C6D9BD /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -272,7 +316,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChristianRiccio.AutoPin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -308,7 +352,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChristianRiccio.AutoPin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -461,7 +505,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChristianRiccio.AutoPin.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
@@ -491,7 +535,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ChristianRiccio.AutoPin.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
